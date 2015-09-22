@@ -1,0 +1,16 @@
+
+<h1>PostIts</h1>
+
+<%= link_to new_post_path do %>
+  <i class="fa fa-plus"></i> new post
+<% end %>
+
+<div class="posts">
+  <% @posts.each do |post| %>
+  <%= link_to "/posts/#{post.id}" do %>
+     <h3 class="title"><%= post.title.upcase%></h3>
+  <% end %>
+     <p><class = "body"><%= post.body %></p>
+
+  <% end %>
+</div>

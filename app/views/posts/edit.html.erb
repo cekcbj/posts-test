@@ -1,0 +1,5 @@
+<%= simple_form_for @post do |p| %>
+  <%= p.input :title %>
+  <%= p.input :body, :as  => :text %>
+  <%= p.submit 'Save', class:'btn btn-primary btn-lg'%>
+ <% end %>
